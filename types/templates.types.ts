@@ -260,6 +260,33 @@ export interface EnquiryData {
   };
 }
 
+export interface TeamMember {
+  id: string;
+  name: string;
+  role: string;
+  image: string;
+}
+
+export interface TeamData {
+  subtitle: string;
+  title1: string;
+  title2: string;
+  members: TeamMember[];
+}
+
+export interface CounterItem {
+  id: string;
+  icon: string;
+  number: number;
+  suffix?: string;
+  label: string;
+}
+
+export interface CounterData {
+  bgImage?: string;
+  items: CounterItem[];
+}
+
 export interface WedBlissTemplateData {
   common: {
     aboutBreadcrumb?: any;
@@ -285,6 +312,8 @@ export interface WedBlissTemplateData {
         Testimonials?: { variants?: { WedBlissTestimonials1?: TestimonialsData } };
         contact?: { variants?: { WedBlissContact1?: ContactData } };
         enquiry?: { variants?: { WedBlissEnquiry1?: EnquiryData } };
+        Counter?: { variants?: { WedBlissCounter1?: CounterData } };
+        Team?: { variants?: { WedBlissTeam1?: TeamData } };
       };
     };
   };

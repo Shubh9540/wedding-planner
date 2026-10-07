@@ -136,7 +136,9 @@
       ]
     },
     "aboutBreadcrumb": {
-      "title": "About Us",
+      "title": "ABOUT US",
+      "subtitle": "I Do What I Love",
+      "bgImage": "/main logo/breadcrumb.webp",
       "paths": [
         {
           "label": "Home",
@@ -1243,6 +1245,68 @@
             }
           }
         },
+        "Counter": {
+          "variants": {
+            "WedBlissCounter1": {
+              "bgImage": "/banner/ban1.jpg",
+              "items": [
+                {
+                  "id": "c1",
+                  "icon": "FaHeart",
+                  "number": 878,
+                  "label": "GOOD COMMENTS"
+                },
+                {
+                  "id": "c2",
+                  "icon": "FaCalendarAlt",
+                  "number": 175,
+                  "label": "FEATURED EVENTS"
+                },
+                {
+                  "id": "c3",
+                  "icon": "FaCrown",
+                  "number": 878,
+                  "label": "AWARD WINNING"
+                },
+                {
+                  "id": "c4",
+                  "icon": "FaUsers",
+                  "number": 125,
+                  "label": "HAPPY CLIENTS"
+                }
+              ]
+            }
+          }
+        },
+        "Team": {
+          "variants": {
+            "WedBlissTeam1": {
+              "subtitle": "MEET OUR TEAM",
+              "title1": "Planner Latest",
+              "title2": "Team",
+              "members": [
+                {
+                  "id": "tm1",
+                  "name": "Lenalee Crus",
+                  "role": "Graphic Designer",
+                  "image": "/team/team1.webp"
+                },
+                {
+                  "id": "tm2",
+                  "name": "Diana Aiden",
+                  "role": "Event Planner",
+                  "image": "/team/team2.webp"
+                },
+                {
+                  "id": "tm3",
+                  "name": "Jimmy Edward",
+                  "role": "Event Manager",
+                  "image": "/team/team3.webp"
+                }
+              ]
+            }
+          }
+        },
         "Testimonials": {
           "variants": {
             "WedBlissTestimonials1": {
@@ -1257,7 +1321,7 @@
                   "location": "Homeowner, Delhi",
                   "quote": "The team did an amazing job at our home. Everything was spotless, and they were professional, polite and on time. Highly recommend their services!",
                   "rating": 5,
-                  "avatar": "/team/1.jpg"
+                  "avatar": "/team/team1.webp"
                 },
                 {
                   "id": "t2",
@@ -1265,7 +1329,7 @@
                   "location": "Business Owner, Noida",
                   "quote": "We've been using their office cleaning services for over a year now. The quality, consistency and attention to detail are outstanding. Our workspace has never looked better!",
                   "rating": 5,
-                  "avatar": "/team/2.jpg"
+                  "avatar": "/team/team2.webp"
                 },
                 {
                   "id": "t3",
@@ -1273,7 +1337,7 @@
                   "location": "Homeowner, Gurugram",
                   "quote": "Excellent service! The staff was friendly, thorough and used safe, eco-friendly products. My home feels fresh and clean every time.",
                   "rating": 5,
-                  "avatar": "/team/3.jpg"
+                  "avatar": "/team/team3.webp"
                 },
                 {
                   "id": "t4",
@@ -1281,7 +1345,7 @@
                   "location": "Homeowner, Pune",
                   "quote": "The team did an amazing job at our home. Everything was spotless, and they were professional, polite and on time. Highly recommend their services!",
                   "rating": 5,
-                  "avatar": "/team/4.jpg"
+                  "avatar": "/team/team1.webp"
                 },
                 {
                   "id": "t5",
@@ -1289,7 +1353,7 @@
                   "location": "Office Manager, Mumbai",
                   "quote": "We've been using their office cleaning services for over a year now. The quality, consistency and attention to detail are outstanding. Our workspace has never looked better!",
                   "rating": 5,
-                  "avatar": "/team/1.jpg"
+                  "avatar": "/team/team2.webp"
                 },
                 {
                   "id": "t6",
@@ -1297,7 +1361,7 @@
                   "location": "Homeowner, Bangalore",
                   "quote": "Excellent service! The staff was friendly, thorough and used safe, eco-friendly products. My home feels fresh and clean every time.",
                   "rating": 5,
-                  "avatar": "/team/2.jpg"
+                  "avatar": "/team/team3.webp"
                 }
               ]
             }

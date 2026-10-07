@@ -6,7 +6,9 @@ import { Header } from '@/components/common/Header';
 import { Breadcrumb } from '@/components/common/Breadcrumb';
 import { AboutUsSection } from '@/components/sections/AboutUsSection';
 
-import { ProcessSection } from '@/components/sections/ProcessSection';
+import { WhatWeDoSection } from '@/components/sections/WhatWeDoSection';
+import { CounterSection } from '@/components/sections/CounterSection';
+import { TeamSection } from '@/components/sections/TeamSection';
 import { TestimonialSection } from '@/components/sections/TestimonialSection';
 import { Footer } from '@/components/common/Footer';
 
@@ -28,10 +30,14 @@ export default function Page() {
       {/* About Us Section */}
       <AboutUsSection data={sectionData.AboutUs?.variants?.WedBlissAboutUs1} hideButton={true} />
 
-      
+      {/* What We Do Section */}
+      <WhatWeDoSection data={sectionData.WhatWeDo?.variants?.WedBlissWhatWeDo1} />
 
-      {/* Process Section */}
-      <ProcessSection data={sectionData.Process?.variants?.WedBlissProcess1} />
+      {/* Counter Section */}
+      <CounterSection data={sectionData.Counter?.variants?.WedBlissCounter1} />
+
+      {/* Team Section */}
+      <TeamSection data={sectionData.Team?.variants?.WedBlissTeam1} />
 
       {/* Testimonials Section */}
       <TestimonialSection data={sectionData.Testimonials?.variants?.WedBlissTestimonials1} />
