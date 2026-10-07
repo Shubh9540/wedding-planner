@@ -3,16 +3,16 @@
 import React, { useEffect, useState } from 'react';
 import { FooterData } from '@/types/templates.types';
 import Link from 'next/link';
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaChevronRight, FaArrowUp, FaTwitter } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaChevronRight, FaArrowUp, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 const renderSocialIcon = (iconName: string) => {
   switch (iconName) {
-    case 'FaFacebookF': return <FaFacebookF />;
-    case 'FaInstagram': return <FaInstagram />;
-    case 'FaLinkedinIn': return <FaLinkedinIn />;
-    case 'FaTwitter': return <FaTwitter />;
-    case 'FaYoutube': return <FaTwitter />; // mapping youtube to twitter since JSON might have youtube
-    default: return <FaFacebookF />;
+    case 'FaFacebookF': return <FaFacebookF size={14} />;
+    case 'FaInstagram': return <FaInstagram size={14} />;
+    case 'FaLinkedinIn': return <FaLinkedinIn size={14} />;
+    case 'FaTwitter': return <FaTwitter size={14} />;
+    case 'FaYoutube': return <FaYoutube size={14} />; // mapping youtube to twitter since JSON might have youtube
+    default: return <FaFacebookF size={14} />;
   }
 };
 
@@ -71,7 +71,7 @@ export const Footer = ({ data }: { data?: FooterData }) => {
               <RingsDivider className="mb-6 w-[70%]" />
               
               <p className="text-gray-200 text-[15px] leading-relaxed mb-8 pr-4">
-                Turning your special moments into unforgettable celebrations with creativity, care and perfection.
+                {data.description}
               </p>
               
               <ul className="flex flex-col gap-6">
@@ -81,7 +81,7 @@ export const Footer = ({ data }: { data?: FooterData }) => {
                   </div>
                   <div>
                     <p className="text-gray-200 text-[15px] leading-snug pt-1">
-                      24 Fifth St., Los Angeles,<br/>USA
+                      {data.contactInfo.address}
                     </p>
                   </div>
                 </li>
@@ -90,7 +90,7 @@ export const Footer = ({ data }: { data?: FooterData }) => {
                     <FaEnvelope size={16} />
                   </div>
                   <div>
-                    <p className="text-gray-200 text-[15px] pt-1">info@example.com</p>
+                    <p className="text-gray-200 text-[15px] pt-1">{data.contactInfo.email}</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
@@ -99,8 +99,7 @@ export const Footer = ({ data }: { data?: FooterData }) => {
                   </div>
                   <div>
                     <p className="text-gray-200 text-[15px] leading-snug pt-1">
-                      +1 123 456 7890<br/>
-                      Support: +1 123 456 7890
+                      {data.contactInfo.phone}<br/>Support: {data.contactInfo.phone}
                     </p>
                   </div>
                 </li>
@@ -112,13 +111,10 @@ export const Footer = ({ data }: { data?: FooterData }) => {
               <h3 className="text-[22px] font-serif text-white mb-4">Our Services</h3>
               <div className="w-8 h-[2px] bg-[#c49250] mb-8"></div>
               <ul className="flex flex-col gap-5">
-                {[
-                  "Wedding Planning", "Corporate Events", "Birthday Planning", 
-                  "Destination Weddings", "Event Decoration", "Venue Selection"
-                ].map((item, i) => (
-                  <li key={i}>
-                    <Link href="#" className="text-gray-200 text-[15px] hover:text-[#c49250] transition-colors flex items-center gap-4">
-                      <FaChevronRight className="text-[#c49250] text-[12px]" /> {item}
+                {data.servicesLinks.map((link) => (
+                  <li key={link.id}>
+                    <Link href={link.url} className="text-gray-200 text-[15px] hover:text-[#c49250] transition-colors flex items-center gap-4">
+                      <FaChevronRight className="text-[#c49250] text-[12px]" /> {link.label}
                     </Link>
                   </li>
                 ))}
@@ -130,13 +126,10 @@ export const Footer = ({ data }: { data?: FooterData }) => {
               <h3 className="text-[22px] font-serif text-white mb-4">Useful Links</h3>
               <div className="w-8 h-[2px] bg-[#c49250] mb-8"></div>
               <ul className="flex flex-col gap-5">
-                {[
-                  "Home", "About Us", "Our Gallery", 
-                  "Event Guides", "Latest News", "Pricing & Terms"
-                ].map((item, i) => (
-                  <li key={i}>
-                    <Link href="#" className="text-gray-200 text-[15px] hover:text-[#c49250] transition-colors flex items-center gap-4">
-                      <FaChevronRight className="text-[#c49250] text-[12px]" /> {item}
+                {data.quickLinks.map((link) => (
+                  <li key={link.id}>
+                    <Link href={link.url} className="text-gray-200 text-[15px] hover:text-[#c49250] transition-colors flex items-center gap-4">
+                      <FaChevronRight className="text-[#c49250] text-[12px]" /> {link.label}
                     </Link>
                   </li>
                 ))}
@@ -148,13 +141,10 @@ export const Footer = ({ data }: { data?: FooterData }) => {
               <h3 className="text-[22px] font-serif text-white mb-4">Frequent Questions</h3>
               <div className="w-8 h-[2px] bg-[#c49250] mb-8"></div>
               <ul className="flex flex-col gap-5">
-                {[
-                  "How Can I Set An Event?", "What Venues Do You Use?", "Event Catalogue", 
-                  "Shipping & Delivery", "What's your dream job?"
-                ].map((item, i) => (
-                  <li key={i}>
-                    <Link href="#" className="text-gray-200 text-[15px] hover:text-[#c49250] transition-colors flex items-center gap-4">
-                      <FaChevronRight className="text-[#c49250] text-[12px]" /> {item}
+                {(data.faqLinks || []).map((link) => (
+                  <li key={link.id}>
+                    <Link href={link.url} className="text-gray-200 text-[15px] hover:text-[#c49250] transition-colors flex items-center gap-4">
+                      <FaChevronRight className="text-[#c49250] text-[12px]" /> {link.label}
                     </Link>
                   </li>
                 ))}
@@ -171,21 +161,16 @@ export const Footer = ({ data }: { data?: FooterData }) => {
           {/* Copyright Bar */}
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <p className="text-gray-200 text-[14px] text-center md:text-left flex-1 md:text-center ml-0 md:ml-12">
-              Copyright © 2024 WedBliss. All rights reserved.
+              {data.copyrightText}
             </p>
             <div className="flex items-center gap-3">
-              {[
-                { icon: <FaFacebookF size={14} />, id: 'fb' },
-                { icon: <FaTwitter size={14} />, id: 'tw' },
-                { icon: <FaInstagram size={14} />, id: 'ig' },
-                { icon: <FaLinkedinIn size={14} />, id: 'li' }
-              ].map(social => (
+              {data.socialLinks.map(social => (
                 <Link 
                   key={social.id} 
-                  href="#" 
+                  href={social.url} 
                   className="w-10 h-10 rounded-full bg-[#4a262a] flex items-center justify-center text-white hover:bg-[#c49250] transition-colors shadow-sm"
                 >
-                  {social.icon}
+                  {renderSocialIcon(social.icon)}
                 </Link>
               ))}
             </div>
