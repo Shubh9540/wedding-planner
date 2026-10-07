@@ -1,0 +1,1585 @@
+{
+  "common": {
+    "Footer": {
+      "logoAlt": "WedBliss Logo",
+      "brandTitle": "WedBliss",
+      "copyrightText": "Copyright © 2026 WedBliss. All rights reserved. Powered By Lestow",
+      "description": "Turning your special moments into unforgettable celebrations with creativity, care and perfection.",
+      "hoursTitle": "Working Hours",
+      "hoursDays": "Mon - Sat:",
+      "hours": "9:00 AM - 7:00 PM\nSunday: Closed",
+      "socialLinks": [
+        {
+          "id": "fs1",
+          "icon": "FaFacebookF",
+          "url": "https://www.facebook.com"
+        },
+        {
+          "id": "fs2",
+          "icon": "FaInstagram",
+          "url": "https://www.instagram.com"
+        },
+        {
+          "id": "fs3",
+          "icon": "FaLinkedinIn",
+          "url": "https://www.linkedin.com"
+        },
+        {
+          "id": "fs4",
+          "icon": "FaYoutube",
+          "url": "https://www.youtube.com"
+        }
+      ],
+      "quickLinks": [
+        {
+          "id": "ql1",
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "id": "ql2",
+          "label": "About Us",
+          "url": "/about"
+        },
+        {
+          "id": "ql3",
+          "label": "Our Gallery",
+          "url": "/gallery"
+        },
+        {
+          "id": "ql4",
+          "label": "Event Guides",
+          "url": "/services"
+        },
+        {
+          "id": "ql5",
+          "label": "Latest News",
+          "url": "/blog"
+        },
+        {
+          "id": "ql6",
+          "label": "Pricing & Terms",
+          "url": "/contact"
+        }
+      ],
+      "servicesLinks": [
+        {
+          "id": "sl1",
+          "label": "Wedding Planning",
+          "url": "/services"
+        },
+        {
+          "id": "sl2",
+          "label": "Corporate Events",
+          "url": "/services"
+        },
+        {
+          "id": "sl3",
+          "label": "Birthday Planning",
+          "url": "/services"
+        },
+        {
+          "id": "sl4",
+          "label": "Destination Weddings",
+          "url": "/services"
+        },
+        {
+          "id": "sl5",
+          "label": "Event Decoration",
+          "url": "/services"
+        },
+        {
+          "id": "sl6",
+          "label": "Venue Selection",
+          "url": "/services"
+        }
+      ],
+      "contactInfo": {
+        "address": "123 Main St, New York, NY, USA",
+        "phone": "+1 000000000",
+        "email": "info@xyz.com"
+      },
+      "instagram": [
+        "/service/1.jpg",
+        "/service/2.jpg",
+        "/service/3.jpg",
+        "/service/4.jpg",
+        "/service/5.jpg",
+        "/service/6.jpg"
+      ],
+      "faqLinks": [
+        {
+          "id": "fq1",
+          "label": "How Can I Set An Event?",
+          "url": "/faq"
+        },
+        {
+          "id": "fq2",
+          "label": "What Venues Do You Use?",
+          "url": "/faq"
+        },
+        {
+          "id": "fq3",
+          "label": "Event Catalogue",
+          "url": "/services"
+        },
+        {
+          "id": "fq4",
+          "label": "Shipping & Delivery",
+          "url": "/contact"
+        },
+        {
+          "id": "fq5",
+          "label": "What's your dream job?",
+          "url": "/about"
+        }
+      ]
+    },
+    "aboutBreadcrumb": {
+      "title": "About Us",
+      "paths": [
+        {
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "label": "About Us"
+        }
+      ]
+    },
+    "servicesBreadcrumb": {
+      "title": "Our Services",
+      "paths": [
+        {
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "label": "Services"
+        }
+      ]
+    },
+    "contactBreadcrumb": {
+      "title": "Contact Us",
+      "paths": [
+        {
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "label": "Contact Us"
+        }
+      ]
+    },
+    "enquiryBreadcrumb": {
+      "title": "Enquiry Now",
+      "paths": [
+        {
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "label": "Enquiry Now"
+        }
+      ]
+    }
+  },
+  "categories": {
+    "WedBliss": {
+      "sections": {
+        "TopBar": {
+          "variants": {
+            "WedBlissTopBar1": {
+              "phoneLabel": "Call Us :",
+              "phoneValue": "+1 000000000",
+              "emailValue": "info@xyz.com",
+              "followLabel": "Follow Us On :",
+              "socialLinks": [
+                {
+                  "id": "tb-fb",
+                  "icon": "FaFacebookF",
+                  "url": "https://www.facebook.com"
+                },
+                {
+                  "id": "tb-ig",
+                  "icon": "FaXTwitter",
+                  "url": "https://x.com"
+                },
+                {
+                  "id": "tb-in",
+                  "icon": "FaInstagram",
+                  "url": "https://www.instagram.com"
+                },
+                {
+                  "id": "tb-yt",
+                  "icon": "FaLinkedinIn",
+                  "url": "https://www.linkedin.com"
+                }
+              ]
+            }
+          }
+        },
+        "Header": {
+          "variants": {
+            "WedBlissHeader1": {
+              "logo": "/main logo/logo.webp",
+              "logoAlt": "WedBliss Logo",
+              "navLinks": [
+                {
+                  "id": "nl-home",
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "id": "nl-about",
+                  "label": "About Us",
+                  "url": "/about"
+                },
+                {
+                  "id": "nl-services",
+                  "label": "Our Services",
+                  "url": "/services",
+                  "hasDropdown": true
+                },
+                {
+                  "id": "nl-gallery",
+                  "label": "Gallery",
+                  "url": "/gallery"
+                },
+                {
+                  "id": "nl-faq",
+                  "label": "FAQ",
+                  "url": "/faq"
+                },
+                {
+                  "id": "nl-contact",
+                  "label": "Contact Us",
+                  "url": "/contact"
+                }
+              ],
+              "contactButton": {
+                "text": "Get a Quote ->",
+                "url": "/enquiry"
+              }
+            }
+          }
+        },
+        "Hero": {
+          "variants": {
+            "WedBlissHero1": {
+              "subtitle": "YOUR CELEBRATION PRESENTS",
+              "title1": "LET'S HAVE A",
+              "title2": "PARTY!",
+              "description": "Planning a Wedding, Proposal, Corporate or Event in our busy city is not so easy, and it takes skills (and time) to make it all look easy-going.",
+              "image1": "/banner/banner.webp",
+              "button1": {
+                "text": "Get a Quote >",
+                "url": "/enquiry"
+              },
+              "button2": {
+                "text": "More Gallery >",
+                "url": "/gallery"
+              }
+            }
+          }
+        },
+        "AboutUs": {
+          "variants": {
+            "WedBlissAboutUs1": {
+              "subtitle": "ABOUT US",
+              "title1": "About Our",
+              "title2": "WedBliss",
+              "description1": "With our passion, knowledge, creative flair and inspiration, we are dedicated in helping you to achieve your dream wedding day or special event within your budget.",
+              "description2": "Our wedding planning and event coordination services are designed for every couple, no matter the size of your celebration. From intimate gatherings to grand destination weddings, we create memorable experiences with personalized planning, beautiful décor and seamless execution.",
+              "stats": [
+                {
+                  "id": "s1",
+                  "number": "50",
+                  "suffix": "K+",
+                  "text": "Happy Clients",
+                  "icon": "FaUsers"
+                },
+                {
+                  "id": "s2",
+                  "number": "15",
+                  "suffix": "Years",
+                  "text": "Experience",
+                  "icon": "FaRegCalendarAlt"
+                },
+                {
+                  "id": "s3",
+                  "number": "70",
+                  "suffix": "K+",
+                  "text": "Events Planned",
+                  "icon": "FaRegCheckCircle"
+                }
+              ],
+              "imageMain": "/about/about_big.webp",
+              "imageSmall": "/about/about_small.webp"
+            }
+          }
+        },
+        "Services": {
+          "variants": {
+            "WedBlissServices1": {
+              "subtitle": "OUR SERVICES",
+              "title1": "Provide Best",
+              "title2": "Services",
+              "description": "We create memorable experiences with our professional planning and personalized services for every special occasion.",
+              "services": [
+                {
+                  "id": "s1",
+                  "title": "Wedding",
+                  "description": "",
+                  "image": "/service/weeding.webp",
+                  "icon": "FaRing",
+                  "url": "/services/wedding"
+                },
+                {
+                  "id": "s2",
+                  "title": "Private Party",
+                  "description": "",
+                  "image": "/service/private party.webp",
+                  "icon": "FaGlassCheers",
+                  "url": "/services/private-party"
+                },
+                {
+                  "id": "s3",
+                  "title": "Corporate Party",
+                  "description": "",
+                  "image": "/service/corporate party.webp",
+                  "icon": "FaUsers",
+                  "url": "/services/corporate-party"
+                }
+              ]
+            }
+          }
+        },
+        "WhatWeDo": {
+          "variants": {
+            "WedBlissWhatWeDo1": {
+              "subtitle": "WHAT WE DO",
+              "title1": "Get Premium",
+              "title2": "Our",
+              "title3": "Services",
+              "description": "We have a huge range of suppliers and contacts in the industry that work closely with us to ensure you get the perfect event experience.",
+              "image": "/about/what we do.webp",
+              "features": [
+                {
+                  "id": "p1",
+                  "icon": "FaBirthdayCake",
+                  "title": "Catering & Decor",
+                  "description": "Delicious food and stunning decor to create the perfect ambiance.",
+                  "url": "/services/catering"
+                },
+                {
+                  "id": "p2",
+                  "icon": "FaMapMarkedAlt",
+                  "title": "Venue Selections",
+                  "description": "We help you find the ideal venue that matches your style and budget.",
+                  "url": "/services/venues"
+                }
+              ]
+            }
+          }
+        },
+        "ServiceDetail": {
+          "variants": {
+            "wedbliss-installation": {
+              "id": "wedbliss-installation",
+              "subtitle": "Our Service",
+              "title1": "WedBliss",
+              "title2": "Installation",
+              "description": "We provide professional wedbliss installation services for residential and commercial properties, ensuring long-lasting performance, leak-free connections and complete peace of mind.",
+              "imageMain": "/service/1.jpg",
+              "features": [
+                {
+                  "id": "f1",
+                  "icon": "FiShield",
+                  "title": "Durable Installation"
+                },
+                {
+                  "id": "f2",
+                  "icon": "FiSettings",
+                  "title": "Quality Materials"
+                },
+                {
+                  "id": "f3",
+                  "icon": "FiClock",
+                  "title": "On-Time Completion"
+                },
+                {
+                  "id": "f4",
+                  "icon": "FiUsers",
+                  "title": "Experienced Technicians"
+                }
+              ],
+              "overviewTitle": "Service Overview",
+              "overviewText": [
+                "Our pipe installation services are designed to meet the needs of modern homes and businesses. Whether you are constructing a new property or upgrading your existing wedbliss system, our skilled team ensures safe, efficient and high-quality installations using premium-grade materials.",
+                "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your wedbliss system running smoothly for years to come."
+              ],
+              "overviewImage": "/service/2.jpg",
+              "processTitle": "Our Process",
+              "processSteps": [
+                {
+                  "id": "p1",
+                  "number": "01",
+                  "title": "Site Inspection",
+                  "description": "We assess your wedbliss requirements and recommend the best solution."
+                },
+                {
+                  "id": "p2",
+                  "number": "02",
+                  "title": "Planning & Design",
+                  "description": "Detailed planning to ensure a safe and efficient installation process."
+                },
+                {
+                  "id": "p3",
+                  "number": "03",
+                  "title": "Installation",
+                  "description": "Our experts install pipes using quality materials and proven techniques."
+                },
+                {
+                  "id": "p4",
+                  "number": "04",
+                  "title": "Testing & Support",
+                  "description": "We test the system for leaks and performance, and provide ongoing support."
+                }
+              ],
+              "faqTitle": "Frequently Asked Questions",
+              "faqs": [
+                {
+                  "id": "q1",
+                  "question": "What types of pipes do you install?",
+                  "answer": "We install a variety of pipes including PVC, copper, PEX, and galvanized steel depending on your specific requirements and local wedbliss codes."
+                },
+                {
+                  "id": "q2",
+                  "question": "How long does the installation process take?",
+                  "answer": "The duration depends on the scope of the project. A single fixture pipe installation might take a few hours, while whole-house repiping could take several days."
+                },
+                {
+                  "id": "q3",
+                  "question": "Do you provide a warranty on installation?",
+                  "answer": "Yes, we provide a comprehensive warranty on both our workmanship and the materials we supply."
+                },
+                {
+                  "id": "q4",
+                  "question": "Can you handle both residential and commercial projects?",
+                  "answer": "Absolutely! Our team is experienced in handling small residential pipe repairs as well as large-scale commercial pipe installations."
+                }
+              ],
+              "sidebar": {
+                "quoteForm": {
+                  "title": "Get a Free Quote",
+                  "description": "Fill out the form and our team will get back to you with the best solution for your needs.",
+                  "buttonText": "Enquire Now ->",
+                  "servicesList": [
+                    "Pipe Installation",
+                    "Leak Repairs",
+                    "Drain Cleaning",
+                    "Water Heaters",
+                    "Bathroom WedBliss",
+                    "Emergency WedBliss"
+                  ]
+                },
+                "servicesList": {
+                  "title": "Our Services",
+                  "services": [
+                    {
+                      "id": "s1",
+                      "label": "WedBliss Installation",
+                      "url": "/services/wedbliss-installation"
+                    },
+                    {
+                      "id": "s2",
+                      "label": "Leak Detection Services",
+                      "url": "/services/leak-detection"
+                    },
+                    {
+                      "id": "s3",
+                      "label": "Pipe & Drain Cleaning",
+                      "url": "/services/pipe-drain-cleaning"
+                    },
+                    {
+                      "id": "s4",
+                      "label": "General WedBliss Repair",
+                      "url": "/services/general-repair"
+                    },
+                    {
+                      "id": "s5",
+                      "label": "Water Heater Services",
+                      "url": "/services/water-heater"
+                    },
+                    {
+                      "id": "s6",
+                      "label": "Bathroom Fixture Installation",
+                      "url": "/services/bathroom-fixture"
+                    }
+                  ]
+                }
+              }
+            },
+            "leak-detection": {
+              "id": "leak-detection",
+              "subtitle": "Our Service",
+              "title1": "Leak",
+              "title2": "Detection Services",
+              "description": "Find and fix hidden leaks before they become bigger problems. We use advanced tools to detect leaks quickly and accurately.",
+              "imageMain": "/service/2.jpg",
+              "features": [
+                {
+                  "id": "f1",
+                  "icon": "FiShield",
+                  "title": "Durable Installation"
+                },
+                {
+                  "id": "f2",
+                  "icon": "FiSettings",
+                  "title": "Quality Materials"
+                },
+                {
+                  "id": "f3",
+                  "icon": "FiClock",
+                  "title": "On-Time Completion"
+                },
+                {
+                  "id": "f4",
+                  "icon": "FiUsers",
+                  "title": "Experienced Technicians"
+                }
+              ],
+              "overviewTitle": "Service Overview",
+              "overviewText": [
+                "Find and fix hidden leaks before they become bigger problems. We use advanced tools to detect leaks quickly and accurately.",
+                "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your wedbliss system running smoothly for years to come."
+              ],
+              "overviewImage": "/service/2.jpg",
+              "processTitle": "Our Process",
+              "processSteps": [
+                {
+                  "id": "p1",
+                  "number": "01",
+                  "title": "Site Inspection",
+                  "description": "We assess your wedbliss requirements and recommend the best solution."
+                },
+                {
+                  "id": "p2",
+                  "number": "02",
+                  "title": "Planning & Design",
+                  "description": "Detailed planning to ensure a safe and efficient installation process."
+                },
+                {
+                  "id": "p3",
+                  "number": "03",
+                  "title": "Installation",
+                  "description": "Our experts install pipes using quality materials and proven techniques."
+                },
+                {
+                  "id": "p4",
+                  "number": "04",
+                  "title": "Testing & Support",
+                  "description": "We test the system for leaks and performance, and provide ongoing support."
+                }
+              ],
+              "faqTitle": "Frequently Asked Questions",
+              "faqs": [
+                {
+                  "id": "q1",
+                  "question": "What types of pipes do you install?",
+                  "answer": "We install a variety of pipes including PVC, copper, PEX, and galvanized steel depending on your specific requirements and local wedbliss codes."
+                },
+                {
+                  "id": "q2",
+                  "question": "How long does the installation process take?",
+                  "answer": "The duration depends on the scope of the project. A single fixture pipe installation might take a few hours, while whole-house repiping could take several days."
+                },
+                {
+                  "id": "q3",
+                  "question": "Do you provide a warranty on installation?",
+                  "answer": "Yes, we provide a comprehensive warranty on both our workmanship and the materials we supply."
+                },
+                {
+                  "id": "q4",
+                  "question": "Can you handle both residential and commercial projects?",
+                  "answer": "Absolutely! Our team is experienced in handling small residential pipe repairs as well as large-scale commercial pipe installations."
+                }
+              ],
+              "sidebar": {
+                "quoteForm": {
+                  "title": "Get a Free Quote",
+                  "description": "Fill out the form and our team will get back to you with the best solution for your needs.",
+                  "buttonText": "Enquire Now ->",
+                  "servicesList": [
+                    "Pipe Installation",
+                    "Leak Repairs",
+                    "Drain Cleaning",
+                    "Water Heaters",
+                    "Bathroom WedBliss",
+                    "Emergency WedBliss"
+                  ]
+                },
+                "servicesList": {
+                  "title": "Our Services",
+                  "services": [
+                    {
+                      "id": "s1",
+                      "label": "WedBliss Installation",
+                      "url": "/services/wedbliss-installation"
+                    },
+                    {
+                      "id": "s2",
+                      "label": "Leak Detection Services",
+                      "url": "/services/leak-detection"
+                    },
+                    {
+                      "id": "s3",
+                      "label": "Pipe & Drain Cleaning",
+                      "url": "/services/pipe-drain-cleaning"
+                    },
+                    {
+                      "id": "s4",
+                      "label": "General WedBliss Repair",
+                      "url": "/services/general-repair"
+                    },
+                    {
+                      "id": "s5",
+                      "label": "Water Heater Services",
+                      "url": "/services/water-heater"
+                    },
+                    {
+                      "id": "s6",
+                      "label": "Bathroom Fixture Installation",
+                      "url": "/services/bathroom-fixture"
+                    }
+                  ]
+                }
+              }
+            },
+            "pipe-drain-cleaning": {
+              "id": "pipe-drain-cleaning",
+              "subtitle": "Our Service",
+              "title1": "Pipe",
+              "title2": "& Drain Cleaning",
+              "description": "Keep your pipes clear and your systems running smoothly with our professional drain cleaning services.",
+              "imageMain": "/service/3.jpg",
+              "features": [
+                {
+                  "id": "f1",
+                  "icon": "FiShield",
+                  "title": "Durable Installation"
+                },
+                {
+                  "id": "f2",
+                  "icon": "FiSettings",
+                  "title": "Quality Materials"
+                },
+                {
+                  "id": "f3",
+                  "icon": "FiClock",
+                  "title": "On-Time Completion"
+                },
+                {
+                  "id": "f4",
+                  "icon": "FiUsers",
+                  "title": "Experienced Technicians"
+                }
+              ],
+              "overviewTitle": "Service Overview",
+              "overviewText": [
+                "Keep your pipes clear and your systems running smoothly with our professional drain cleaning services.",
+                "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your wedbliss system running smoothly for years to come."
+              ],
+              "overviewImage": "/service/3.jpg",
+              "processTitle": "Our Process",
+              "processSteps": [
+                {
+                  "id": "p1",
+                  "number": "01",
+                  "title": "Site Inspection",
+                  "description": "We assess your wedbliss requirements and recommend the best solution."
+                },
+                {
+                  "id": "p2",
+                  "number": "02",
+                  "title": "Planning & Design",
+                  "description": "Detailed planning to ensure a safe and efficient installation process."
+                },
+                {
+                  "id": "p3",
+                  "number": "03",
+                  "title": "Installation",
+                  "description": "Our experts install pipes using quality materials and proven techniques."
+                },
+                {
+                  "id": "p4",
+                  "number": "04",
+                  "title": "Testing & Support",
+                  "description": "We test the system for leaks and performance, and provide ongoing support."
+                }
+              ],
+              "faqTitle": "Frequently Asked Questions",
+              "faqs": [
+                {
+                  "id": "q1",
+                  "question": "What types of pipes do you install?",
+                  "answer": "We install a variety of pipes including PVC, copper, PEX, and galvanized steel depending on your specific requirements and local wedbliss codes."
+                },
+                {
+                  "id": "q2",
+                  "question": "How long does the installation process take?",
+                  "answer": "The duration depends on the scope of the project. A single fixture pipe installation might take a few hours, while whole-house repiping could take several days."
+                },
+                {
+                  "id": "q3",
+                  "question": "Do you provide a warranty on installation?",
+                  "answer": "Yes, we provide a comprehensive warranty on both our workmanship and the materials we supply."
+                },
+                {
+                  "id": "q4",
+                  "question": "Can you handle both residential and commercial projects?",
+                  "answer": "Absolutely! Our team is experienced in handling small residential pipe repairs as well as large-scale commercial pipe installations."
+                }
+              ],
+              "sidebar": {
+                "quoteForm": {
+                  "title": "Get a Free Quote",
+                  "description": "Fill out the form and our team will get back to you with the best solution for your needs.",
+                  "buttonText": "Enquire Now ->",
+                  "servicesList": [
+                    "Pipe Installation",
+                    "Leak Repairs",
+                    "Drain Cleaning",
+                    "Water Heaters",
+                    "Bathroom WedBliss",
+                    "Emergency WedBliss"
+                  ]
+                },
+                "servicesList": {
+                  "title": "Our Services",
+                  "services": [
+                    {
+                      "id": "s1",
+                      "label": "WedBliss Installation",
+                      "url": "/services/wedbliss-installation"
+                    },
+                    {
+                      "id": "s2",
+                      "label": "Leak Detection Services",
+                      "url": "/services/leak-detection"
+                    },
+                    {
+                      "id": "s3",
+                      "label": "Pipe & Drain Cleaning",
+                      "url": "/services/pipe-drain-cleaning"
+                    },
+                    {
+                      "id": "s4",
+                      "label": "General WedBliss Repair",
+                      "url": "/services/general-repair"
+                    },
+                    {
+                      "id": "s5",
+                      "label": "Water Heater Services",
+                      "url": "/services/water-heater"
+                    },
+                    {
+                      "id": "s6",
+                      "label": "Bathroom Fixture Installation",
+                      "url": "/services/bathroom-fixture"
+                    }
+                  ]
+                }
+              }
+            },
+            "general-repair": {
+              "id": "general-repair",
+              "subtitle": "Our Service",
+              "title1": "General",
+              "title2": "WedBliss Repair",
+              "description": "From dripping faucets to faulty pipes, we handle all types of wedbliss repairs with reliable and long-lasting solutions.",
+              "imageMain": "/service/4.jpg",
+              "features": [
+                {
+                  "id": "f1",
+                  "icon": "FiShield",
+                  "title": "Durable Installation"
+                },
+                {
+                  "id": "f2",
+                  "icon": "FiSettings",
+                  "title": "Quality Materials"
+                },
+                {
+                  "id": "f3",
+                  "icon": "FiClock",
+                  "title": "On-Time Completion"
+                },
+                {
+                  "id": "f4",
+                  "icon": "FiUsers",
+                  "title": "Experienced Technicians"
+                }
+              ],
+              "overviewTitle": "Service Overview",
+              "overviewText": [
+                "From dripping faucets to faulty pipes, we handle all types of wedbliss repairs with reliable and long-lasting solutions.",
+                "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your wedbliss system running smoothly for years to come."
+              ],
+              "overviewImage": "/service/4.jpg",
+              "processTitle": "Our Process",
+              "processSteps": [
+                {
+                  "id": "p1",
+                  "number": "01",
+                  "title": "Site Inspection",
+                  "description": "We assess your wedbliss requirements and recommend the best solution."
+                },
+                {
+                  "id": "p2",
+                  "number": "02",
+                  "title": "Planning & Design",
+                  "description": "Detailed planning to ensure a safe and efficient installation process."
+                },
+                {
+                  "id": "p3",
+                  "number": "03",
+                  "title": "Installation",
+                  "description": "Our experts install pipes using quality materials and proven techniques."
+                },
+                {
+                  "id": "p4",
+                  "number": "04",
+                  "title": "Testing & Support",
+                  "description": "We test the system for leaks and performance, and provide ongoing support."
+                }
+              ],
+              "faqTitle": "Frequently Asked Questions",
+              "faqs": [
+                {
+                  "id": "q1",
+                  "question": "What types of pipes do you install?",
+                  "answer": "We install a variety of pipes including PVC, copper, PEX, and galvanized steel depending on your specific requirements and local wedbliss codes."
+                },
+                {
+                  "id": "q2",
+                  "question": "How long does the installation process take?",
+                  "answer": "The duration depends on the scope of the project. A single fixture pipe installation might take a few hours, while whole-house repiping could take several days."
+                },
+                {
+                  "id": "q3",
+                  "question": "Do you provide a warranty on installation?",
+                  "answer": "Yes, we provide a comprehensive warranty on both our workmanship and the materials we supply."
+                },
+                {
+                  "id": "q4",
+                  "question": "Can you handle both residential and commercial projects?",
+                  "answer": "Absolutely! Our team is experienced in handling small residential pipe repairs as well as large-scale commercial pipe installations."
+                }
+              ],
+              "sidebar": {
+                "quoteForm": {
+                  "title": "Get a Free Quote",
+                  "description": "Fill out the form and our team will get back to you with the best solution for your needs.",
+                  "buttonText": "Enquire Now ->",
+                  "servicesList": [
+                    "Pipe Installation",
+                    "Leak Repairs",
+                    "Drain Cleaning",
+                    "Water Heaters",
+                    "Bathroom WedBliss",
+                    "Emergency WedBliss"
+                  ]
+                },
+                "servicesList": {
+                  "title": "Our Services",
+                  "services": [
+                    {
+                      "id": "s1",
+                      "label": "WedBliss Installation",
+                      "url": "/services/wedbliss-installation"
+                    },
+                    {
+                      "id": "s2",
+                      "label": "Leak Detection Services",
+                      "url": "/services/leak-detection"
+                    },
+                    {
+                      "id": "s3",
+                      "label": "Pipe & Drain Cleaning",
+                      "url": "/services/pipe-drain-cleaning"
+                    },
+                    {
+                      "id": "s4",
+                      "label": "General WedBliss Repair",
+                      "url": "/services/general-repair"
+                    },
+                    {
+                      "id": "s5",
+                      "label": "Water Heater Services",
+                      "url": "/services/water-heater"
+                    },
+                    {
+                      "id": "s6",
+                      "label": "Bathroom Fixture Installation",
+                      "url": "/services/bathroom-fixture"
+                    }
+                  ]
+                }
+              }
+            },
+            "water-heater": {
+              "id": "water-heater",
+              "subtitle": "Our Service",
+              "title1": "Water",
+              "title2": "Heater Services",
+              "description": "Installation, repair and maintenance of all types of water heaters to ensure a continuous supply of hot water.",
+              "imageMain": "/service/5.jpg",
+              "features": [
+                {
+                  "id": "f1",
+                  "icon": "FiShield",
+                  "title": "Durable Installation"
+                },
+                {
+                  "id": "f2",
+                  "icon": "FiSettings",
+                  "title": "Quality Materials"
+                },
+                {
+                  "id": "f3",
+                  "icon": "FiClock",
+                  "title": "On-Time Completion"
+                },
+                {
+                  "id": "f4",
+                  "icon": "FiUsers",
+                  "title": "Experienced Technicians"
+                }
+              ],
+              "overviewTitle": "Service Overview",
+              "overviewText": [
+                "Installation, repair and maintenance of all types of water heaters to ensure a continuous supply of hot water.",
+                "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your wedbliss system running smoothly for years to come."
+              ],
+              "overviewImage": "/service/5.jpg",
+              "processTitle": "Our Process",
+              "processSteps": [
+                {
+                  "id": "p1",
+                  "number": "01",
+                  "title": "Site Inspection",
+                  "description": "We assess your wedbliss requirements and recommend the best solution."
+                },
+                {
+                  "id": "p2",
+                  "number": "02",
+                  "title": "Planning & Design",
+                  "description": "Detailed planning to ensure a safe and efficient installation process."
+                },
+                {
+                  "id": "p3",
+                  "number": "03",
+                  "title": "Installation",
+                  "description": "Our experts install pipes using quality materials and proven techniques."
+                },
+                {
+                  "id": "p4",
+                  "number": "04",
+                  "title": "Testing & Support",
+                  "description": "We test the system for leaks and performance, and provide ongoing support."
+                }
+              ],
+              "faqTitle": "Frequently Asked Questions",
+              "faqs": [
+                {
+                  "id": "q1",
+                  "question": "What types of pipes do you install?",
+                  "answer": "We install a variety of pipes including PVC, copper, PEX, and galvanized steel depending on your specific requirements and local wedbliss codes."
+                },
+                {
+                  "id": "q2",
+                  "question": "How long does the installation process take?",
+                  "answer": "The duration depends on the scope of the project. A single fixture pipe installation might take a few hours, while whole-house repiping could take several days."
+                },
+                {
+                  "id": "q3",
+                  "question": "Do you provide a warranty on installation?",
+                  "answer": "Yes, we provide a comprehensive warranty on both our workmanship and the materials we supply."
+                },
+                {
+                  "id": "q4",
+                  "question": "Can you handle both residential and commercial projects?",
+                  "answer": "Absolutely! Our team is experienced in handling small residential pipe repairs as well as large-scale commercial pipe installations."
+                }
+              ],
+              "sidebar": {
+                "quoteForm": {
+                  "title": "Get a Free Quote",
+                  "description": "Fill out the form and our team will get back to you with the best solution for your needs.",
+                  "buttonText": "Enquire Now ->",
+                  "servicesList": [
+                    "Pipe Installation",
+                    "Leak Repairs",
+                    "Drain Cleaning",
+                    "Water Heaters",
+                    "Bathroom WedBliss",
+                    "Emergency WedBliss"
+                  ]
+                },
+                "servicesList": {
+                  "title": "Our Services",
+                  "services": [
+                    {
+                      "id": "s1",
+                      "label": "WedBliss Installation",
+                      "url": "/services/wedbliss-installation"
+                    },
+                    {
+                      "id": "s2",
+                      "label": "Leak Detection Services",
+                      "url": "/services/leak-detection"
+                    },
+                    {
+                      "id": "s3",
+                      "label": "Pipe & Drain Cleaning",
+                      "url": "/services/pipe-drain-cleaning"
+                    },
+                    {
+                      "id": "s4",
+                      "label": "General WedBliss Repair",
+                      "url": "/services/general-repair"
+                    },
+                    {
+                      "id": "s5",
+                      "label": "Water Heater Services",
+                      "url": "/services/water-heater"
+                    },
+                    {
+                      "id": "s6",
+                      "label": "Bathroom Fixture Installation",
+                      "url": "/services/bathroom-fixture"
+                    }
+                  ]
+                }
+              }
+            },
+            "bathroom-fixture": {
+              "id": "bathroom-fixture",
+              "subtitle": "Our Service",
+              "title1": "Bathroom",
+              "title2": "Fixture Installation",
+              "description": "We install and repair sinks, faucets, toilets, showers and other bathroom fixtures with expertise and care.",
+              "imageMain": "/service/6.jpg",
+              "features": [
+                {
+                  "id": "f1",
+                  "icon": "FiShield",
+                  "title": "Durable Installation"
+                },
+                {
+                  "id": "f2",
+                  "icon": "FiSettings",
+                  "title": "Quality Materials"
+                },
+                {
+                  "id": "f3",
+                  "icon": "FiClock",
+                  "title": "On-Time Completion"
+                },
+                {
+                  "id": "f4",
+                  "icon": "FiUsers",
+                  "title": "Experienced Technicians"
+                }
+              ],
+              "overviewTitle": "Service Overview",
+              "overviewText": [
+                "We install and repair sinks, faucets, toilets, showers and other bathroom fixtures with expertise and care.",
+                "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your wedbliss system running smoothly for years to come."
+              ],
+              "overviewImage": "/service/6.jpg",
+              "processTitle": "Our Process",
+              "processSteps": [
+                {
+                  "id": "p1",
+                  "number": "01",
+                  "title": "Site Inspection",
+                  "description": "We assess your wedbliss requirements and recommend the best solution."
+                },
+                {
+                  "id": "p2",
+                  "number": "02",
+                  "title": "Planning & Design",
+                  "description": "Detailed planning to ensure a safe and efficient installation process."
+                },
+                {
+                  "id": "p3",
+                  "number": "03",
+                  "title": "Installation",
+                  "description": "Our experts install pipes using quality materials and proven techniques."
+                },
+                {
+                  "id": "p4",
+                  "number": "04",
+                  "title": "Testing & Support",
+                  "description": "We test the system for leaks and performance, and provide ongoing support."
+                }
+              ],
+              "faqTitle": "Frequently Asked Questions",
+              "faqs": [
+                {
+                  "id": "q1",
+                  "question": "What types of pipes do you install?",
+                  "answer": "We install a variety of pipes including PVC, copper, PEX, and galvanized steel depending on your specific requirements and local wedbliss codes."
+                },
+                {
+                  "id": "q2",
+                  "question": "How long does the installation process take?",
+                  "answer": "The duration depends on the scope of the project. A single fixture pipe installation might take a few hours, while whole-house repiping could take several days."
+                },
+                {
+                  "id": "q3",
+                  "question": "Do you provide a warranty on installation?",
+                  "answer": "Yes, we provide a comprehensive warranty on both our workmanship and the materials we supply."
+                },
+                {
+                  "id": "q4",
+                  "question": "Can you handle both residential and commercial projects?",
+                  "answer": "Absolutely! Our team is experienced in handling small residential pipe repairs as well as large-scale commercial pipe installations."
+                }
+              ],
+              "sidebar": {
+                "quoteForm": {
+                  "title": "Get a Free Quote",
+                  "description": "Fill out the form and our team will get back to you with the best solution for your needs.",
+                  "buttonText": "Enquire Now ->",
+                  "servicesList": [
+                    "Pipe Installation",
+                    "Leak Repairs",
+                    "Drain Cleaning",
+                    "Water Heaters",
+                    "Bathroom WedBliss",
+                    "Emergency WedBliss"
+                  ]
+                },
+                "servicesList": {
+                  "title": "Our Services",
+                  "services": [
+                    {
+                      "id": "s1",
+                      "label": "WedBliss Installation",
+                      "url": "/services/wedbliss-installation"
+                    },
+                    {
+                      "id": "s2",
+                      "label": "Leak Detection Services",
+                      "url": "/services/leak-detection"
+                    },
+                    {
+                      "id": "s3",
+                      "label": "Pipe & Drain Cleaning",
+                      "url": "/services/pipe-drain-cleaning"
+                    },
+                    {
+                      "id": "s4",
+                      "label": "General WedBliss Repair",
+                      "url": "/services/general-repair"
+                    },
+                    {
+                      "id": "s5",
+                      "label": "Water Heater Services",
+                      "url": "/services/water-heater"
+                    },
+                    {
+                      "id": "s6",
+                      "label": "Bathroom Fixture Installation",
+                      "url": "/services/bathroom-fixture"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "Process": {
+          "variants": {
+            "WedBlissProcess1": {
+              "subtitle": "HOW IT WORKS",
+              "title1": "A Simple Process",
+              "title2": "For WedBliss Services",
+              "bgImage": "/other/process.jpg",
+              "steps": [
+                {
+                  "id": "p1",
+                  "icon": "FiMessageSquare",
+                  "number": "01",
+                  "title": "Get in Touch",
+                  "description": "Contact us with your wedbliss need and share the details."
+                },
+                {
+                  "id": "p2",
+                  "icon": "FiCalendar",
+                  "number": "02",
+                  "title": "Schedule a Visit",
+                  "description": "We arrange a convenient time for our plumber to visit your location."
+                },
+                {
+                  "id": "p3",
+                  "icon": "FiTool",
+                  "number": "03",
+                  "title": "Inspection & Work",
+                  "description": "Our expert inspects the issue and provides the required wedbliss service."
+                },
+                {
+                  "id": "p4",
+                  "icon": "FiCheckCircle",
+                  "number": "04",
+                  "title": "Service Completed",
+                  "description": "We complete the work with quality and ensure everything is working properly."
+                }
+              ]
+            }
+          }
+        },
+        "Testimonials": {
+          "variants": {
+            "WedBlissTestimonials1": {
+              "subtitle": "Testimonials",
+              "title1": "What Our Clients Say",
+              "title2": "About Our WedBliss Services",
+              "description": "We take pride in delivering reliable wedbliss solutions and exceptional customer service. Here's what our valued clients have to say about their experience with us.",
+              "testimonials": [
+                {
+                  "id": "t1",
+                  "name": "Priya Mehta",
+                  "location": "Homeowner, Delhi",
+                  "quote": "The team did an amazing job at our home. Everything was spotless, and they were professional, polite and on time. Highly recommend their services!",
+                  "rating": 5,
+                  "avatar": "/team/1.jpg"
+                },
+                {
+                  "id": "t2",
+                  "name": "Rohit Sharma",
+                  "location": "Business Owner, Noida",
+                  "quote": "We've been using their office cleaning services for over a year now. The quality, consistency and attention to detail are outstanding. Our workspace has never looked better!",
+                  "rating": 5,
+                  "avatar": "/team/2.jpg"
+                },
+                {
+                  "id": "t3",
+                  "name": "Anjali Verma",
+                  "location": "Homeowner, Gurugram",
+                  "quote": "Excellent service! The staff was friendly, thorough and used safe, eco-friendly products. My home feels fresh and clean every time.",
+                  "rating": 5,
+                  "avatar": "/team/3.jpg"
+                },
+                {
+                  "id": "t4",
+                  "name": "Neha Gupta",
+                  "location": "Homeowner, Pune",
+                  "quote": "The team did an amazing job at our home. Everything was spotless, and they were professional, polite and on time. Highly recommend their services!",
+                  "rating": 5,
+                  "avatar": "/team/4.jpg"
+                },
+                {
+                  "id": "t5",
+                  "name": "Vikram Singh",
+                  "location": "Office Manager, Mumbai",
+                  "quote": "We've been using their office cleaning services for over a year now. The quality, consistency and attention to detail are outstanding. Our workspace has never looked better!",
+                  "rating": 5,
+                  "avatar": "/team/1.jpg"
+                },
+                {
+                  "id": "t6",
+                  "name": "Ritu Sharma",
+                  "location": "Homeowner, Bangalore",
+                  "quote": "Excellent service! The staff was friendly, thorough and used safe, eco-friendly products. My home feels fresh and clean every time.",
+                  "rating": 5,
+                  "avatar": "/team/2.jpg"
+                }
+              ]
+            }
+          }
+        },
+        "contact": {
+          "variants": {
+            "WedBlissContact1": {
+              "subtitle": "Contact Us",
+              "title1": "Get In Touch",
+              "title2": "With Us",
+              "description": "Have a question, need a quote, or want to schedule a wedbliss service? Our team is here to help. Reach out to us through the form or using the contact details below.",
+              "contactInfo": {
+                "phoneTitle": "Call Us",
+                "phone": "+1 000000000",
+                "emailTitle": "Email Us",
+                "email": "info@xyz.com",
+                "addressTitle": "Our Location",
+                "address": "123 Main St, New York, NY, USA",
+                "hoursTitle": "Working Hours",
+                "hoursLine1": "Mon - Sat: 9am - 7pm",
+                "hoursLine2": "Sunday: CLOSED"
+              },
+              "form": {
+                "title": "Send Us a Message",
+                "description": "Fill out the form below and our team will get back to you shortly.",
+                "buttonText": "Send Message",
+                "servicesList": [
+                  "Residential Cleaning",
+                  "Commercial Cleaning",
+                  "Post-Construction Cleaning",
+                  "Window Cleaning",
+                  "Carpet Cleaning",
+                  "Other"
+                ]
+              },
+              "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.2528000654!2d-74.1444874457788!3d40.69766374865766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+              "infoBoxes": [
+                {
+                  "icon": "FaClock",
+                  "title": "Working Hours",
+                  "desc1": "Mon - Sat: 9:00 AM - 7:00 PM",
+                  "desc2": "Sunday: Closed"
+                },
+                {
+                  "icon": "FaHeadset",
+                  "title": "Need Urgent Help?",
+                  "desc1": "Call us anytime for",
+                  "desc2": "emergency wedbliss service."
+                },
+                {
+                  "icon": "FaFileAlt",
+                  "title": "Request a Quote",
+                  "desc1": "Get a free, no-obligation",
+                  "desc2": "estimate for your wedbliss needs."
+                }
+              ]
+            }
+          }
+        },
+        "enquiry": {
+          "variants": {
+            "WedBlissEnquiry1": {
+              "subtitle": "GET A QUOTE",
+              "title1": "Get a Quote for",
+              "title2": "Our Cleaning Services",
+              "description": "Tell us about your cleaning requirements and we'll provide you with a customized quote. It's quick, easy and completely free.",
+              "features": [
+                {
+                  "title": "Tailored to Your Needs",
+                  "description": "Get a quote based on your specific cleaning requirements."
+                },
+                {
+                  "title": "Quick & Easy",
+                  "description": "Fill out the form in just a few minutes."
+                },
+                {
+                  "title": "No Obligation",
+                  "description": "Receive a personalized quote with no commitment."
+                }
+              ],
+              "form": {
+                "title1": "Request a",
+                "title2": "Quote",
+                "description": "Fill out the form below and our team will get back to you shortly with a customized quote.",
+                "buttonText": "Submit Request ->",
+                "servicesList": [
+                  "Residential Cleaning",
+                  "Commercial Cleaning",
+                  "Post-Construction Cleaning",
+                  "Window Cleaning",
+                  "Carpet Cleaning",
+                  "Other"
+                ]
+              }
+            }
+          }
+        },
+        "Gallery": {
+          "variants": {
+            "WedBlissGallery1": {
+              "subtitle": "OUR GALLERY",
+              "title1": "Photo",
+              "title2": "Gallery",
+              "description": "A glimpse of our beautifully planned weddings and special events.",
+              "images": [
+                {
+                  "id": "img-1",
+                  "image": "/service/corporate party.webp",
+                  "alt": "Wedding 1"
+                },
+                {
+                  "id": "img-2",
+                  "image": "/service/private party.webp",
+                  "alt": "Wedding 2"
+                },
+                {
+                  "id": "img-3",
+                  "image": "/service/weeding.webp",
+                  "alt": "Wedding 3"
+                },
+                {
+                  "id": "img-4",
+                  "image": "/service/corporate party.webp",
+                  "alt": "Wedding 4"
+                },
+                {
+                  "id": "img-5",
+                  "image": "/service/private party.webp",
+                  "alt": "Wedding 5"
+                },
+                {
+                  "id": "img-6",
+                  "image": "/service/weeding.webp",
+                  "alt": "Wedding 6"
+                }
+              ],
+              "button": {
+                "text": "View More Gallery",
+                "url": "/gallery"
+              }
+            }
+          }
+        },
+        "Faq": {
+          "variants": {
+            "WedBlissFaq1": {
+              "subtitle": "FAQ",
+              "title1": "Frequently",
+              "title2": "Asked Questions",
+              "description": "Below you'll find answers to some of the most frequently asked questions. If you have any other questions, feel free to contact us.",
+              "image": "/about/faq.webp",
+              "faqs": [
+                {
+                  "id": "faq1",
+                  "question": "What can WedBliss do for an Event?",
+                  "answer": "WedBliss specializes in the planning of corporate, social and non-profit events. This includes birthday, celebration parties, employee events, conferences or meetings, weddings, bridal showers and more! We have a creative approach to bring your dreams to a reality."
+                },
+                {
+                  "id": "faq2",
+                  "question": "How far will you travel for an Event?",
+                  "answer": "We are available for travel worldwide depending on the project scope and schedule."
+                },
+                {
+                  "id": "faq3",
+                  "question": "How Can I Contact You?",
+                  "answer": "You can reach us through our contact page, by phone, or by email."
+                },
+                {
+                  "id": "faq4",
+                  "question": "What happens if an Event is cancelled?",
+                  "answer": "We have a detailed cancellation policy outlined in our contract, designed to protect both parties."
+                },
+                {
+                  "id": "faq5",
+                  "question": "How early should you start planning an event?",
+                  "answer": "We recommend starting at least 6-12 months in advance for large events."
+                },
+                {
+                  "id": "faq6",
+                  "question": "Do you charge separately for your various event services?",
+                  "answer": "We offer customized packages based on your specific needs."
+                },
+                {
+                  "id": "faq7",
+                  "question": "If someone wants to get started planning an event, what should they do?",
+                  "answer": "Simply fill out our inquiry form or give us a call to schedule a consultation."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "templateComponents": {
+        "shared": {
+          "Topbar": "WedBlissTopBar1",
+          "Header": "WedBlissHeader1",
+          "Footer": "WedBlissFooter1"
+        },
+        "pages": {
+          "home": {
+            "components": [
+              {
+                "key": "HeroSection",
+                "component": "WedBlissHero1"
+              },
+              {
+                "key": "AboutUs",
+                "component": "WedBlissAboutUs1"
+              },
+              {
+                "key": "Services",
+                "component": "WedBlissServices1"
+              },
+              {
+                "key": "Testimonials",
+                "component": "WedBlissTestimonials1"
+              }
+            ]
+          },
+          "about": {
+            "components": [
+              {
+                "key": "AboutUs",
+                "component": "WedBlissAboutUs1"
+              },
+              {
+                "key": "WhyChooseUs",
+                "component": "WedBlissWhyChooseUs1"
+              }
+            ]
+          },
+          "services": {
+            "components": [
+              {
+                "key": "Services",
+                "component": "WedBlissServices1"
+              },
+              {
+                "key": "WhyChooseUs",
+                "component": "WedBlissWhyChooseUs1"
+              }
+            ]
+          },
+          "gallery": {
+            "components": [
+              {
+                "key": "Gallery",
+                "component": "WedBlissGallery1"
+              },
+              {
+                "key": "VideoGallery",
+                "component": "WedBlissVideoGallery1"
+              }
+            ]
+          },
+          "faq": {
+            "components": [
+              {
+                "key": "Faq",
+                "component": "WedBlissFaq1"
+              }
+            ]
+          },
+          "contact": {
+            "components": [
+              {
+                "key": "Contact",
+                "component": "WedBlissContact1"
+              }
+            ]
+          },
+          "quote": {
+            "components": [
+              {
+                "key": "Quote",
+                "component": "WedBlissQuote1"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
