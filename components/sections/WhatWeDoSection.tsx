@@ -88,11 +88,7 @@ export const WhatWeDoSection = ({ data }: { data?: WhatWeDoData }) => {
                       {feature.description}
                     </p>
 
-                    {/* View More Link */}
-                    <Link href={feature.url || "#"} className="group flex items-center gap-2 text-[var(--color-accent-muted)] font-bold text-sm w-fit transition-colors hover:text-[var(--color-primary)] border-b border-[var(--color-accent-muted)]/40 pb-0.5">
-                      View More
-                      <FaArrowRight className="text-xs transition-transform group-hover:translate-x-1" />
-                    </Link>
+
                   </div>
                 </div>
               </div>

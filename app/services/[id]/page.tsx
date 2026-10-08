@@ -17,7 +17,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
   const sectionData = templateData?.categories?.WedBliss?.sections;
   const commonData = templateData?.common;
 
-  if (!sectionData || !commonData) return <div className="text-black p-10">Loading Data...</div>;
+  if (!sectionData || !commonData) return <div className="text-black p-10">{templateData?.common?.globalUI?.loadingText}</div>;
 
   const allServicesList = sectionData.ServicesGrid?.variants?.WedBlissServicesGrid1?.services || [];
   

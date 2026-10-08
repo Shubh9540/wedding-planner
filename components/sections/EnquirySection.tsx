@@ -3,6 +3,16 @@
 import React from 'react';
 import { EnquiryData } from '@/types/templates.types';
 import { FiArrowRight, FiCalendar } from 'react-icons/fi';
+import { FaCogs, FaBolt, FaHandshake } from 'react-icons/fa';
+
+const renderIcon = (iconName?: string) => {
+  switch (iconName) {
+    case 'FaCogs': return <FaCogs />;
+    case 'FaBolt': return <FaBolt />;
+    case 'FaHandshake': return <FaHandshake />;
+    default: return null;
+  }
+};
 
 export const EnquirySection = ({ data }: { data?: EnquiryData }) => {
   if (!data) return null;
@@ -32,13 +42,20 @@ export const EnquirySection = ({ data }: { data?: EnquiryData }) => {
 
             <div className="flex flex-col gap-8">
               {data.features.map((feature, idx) => (
-                <div key={idx} className="flex flex-col gap-1">
-                  <h4 className="text-lg font-bold text-[var(--color-primary)]">
-                    {feature.title}
-                  </h4>
-                  <p className="text-sm text-gray-500">
-                    {feature.description}
-                  </p>
+                <div key={idx} className="flex gap-5 items-start">
+                  {feature.icon && (
+                    <div className="flex-shrink-0 w-12 h-12 bg-[#fdfaf6] rounded-full flex items-center justify-center text-xl text-[var(--color-accent)] shadow-sm border border-[var(--color-accent)]/10">
+                      {renderIcon(feature.icon)}
+                    </div>
+                  )}
+                  <div className="flex flex-col gap-1.5 pt-1">
+                    <h4 className="text-xl font-bold text-[var(--color-primary)]">
+                      {feature.title}
+                    </h4>
+                    <p className="text-sm text-gray-500 leading-relaxed">
+                      {feature.description}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>

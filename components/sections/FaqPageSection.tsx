@@ -11,11 +11,11 @@ export const FaqPageSection = ({ data }: { data?: FaqData }) => {
   return (
     <section className="w-full bg-[#fdfaf6] py-20 lg:py-12 overflow-hidden">
       <div className="max-w-[1250px] mx-auto px-4 md:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-stretch">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
 
           {/* Left Column - Simple Rounded Image */}
-          <div className="w-full lg:w-1/3">
-            <div className="w-full h-[400px] lg:h-full min-h-[100%] rounded-2xl overflow-hidden shadow-lg">
+          <div className="w-full lg:w-1/3 lg:sticky lg:top-8">
+            <div className="w-full h-[400px] lg:h-[600px] xl:h-[700px] rounded-2xl overflow-hidden shadow-lg">
               <img
                 src={data.image}
                 alt="FAQ"
@@ -70,11 +70,17 @@ export const FaqPageSection = ({ data }: { data?: FaqData }) => {
                       </div>
                     </button>
 
-                    {isOpen && (
-                      <div className="px-5 pb-5 md:pl-[68px] md:pr-10 md:pb-6 text-[#666666] text-xs md:text-sm leading-relaxed">
-                        {faq.answer}
+                    <div
+                      className={`grid transition-all duration-300 ease-in-out ${
+                        isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+                      }`}
+                    >
+                      <div className="overflow-hidden">
+                        <div className="px-5 pb-5 md:pl-[68px] md:pr-10 md:pb-6 text-[#666666] text-xs md:text-sm leading-relaxed">
+                          {faq.answer}
+                        </div>
                       </div>
-                    )}
+                    </div>
                   </div>
                 );
               })}

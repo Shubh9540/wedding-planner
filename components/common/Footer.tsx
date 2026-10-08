@@ -66,7 +66,7 @@ export const Footer = ({ data }: { data?: FooterData }) => {
             
             {/* Column 1: Brand & Contact */}
             <div className="pr-0 lg:pr-6">
-              <img src="/main logo/logo.webp" alt={data.logoAlt || 'WedBliss Logo'} className="h-14 object-contain mb-5" />
+              <img src={data.logoImage} alt={data.logoAlt || 'WedBliss Logo'} className="h-14 object-contain mb-5" />
               
               <RingsDivider className="mb-6 w-[70%]" />
               
@@ -74,36 +74,7 @@ export const Footer = ({ data }: { data?: FooterData }) => {
                 {data.description}
               </p>
               
-              <ul className="flex flex-col gap-6">
-                <li className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-[#4a262a] flex items-center justify-center text-[#c49250] shrink-0 mt-1">
-                    <FaMapMarkerAlt size={16} />
-                  </div>
-                  <div>
-                    <p className="text-gray-200 text-[15px] leading-snug pt-1">
-                      {data.contactInfo.address}
-                    </p>
-                  </div>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-[#4a262a] flex items-center justify-center text-[#c49250] shrink-0">
-                    <FaEnvelope size={16} />
-                  </div>
-                  <div>
-                    <p className="text-gray-200 text-[15px] pt-1">{data.contactInfo.email}</p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-[#4a262a] flex items-center justify-center text-[#d9a8b1] shrink-0 mt-1">
-                    <FaPhoneAlt size={16} />
-                  </div>
-                  <div>
-                    <p className="text-gray-200 text-[15px] leading-snug pt-1">
-                      {data.contactInfo.phone}<br/>Support: {data.contactInfo.phone}
-                    </p>
-                  </div>
-                </li>
-              </ul>
+
             </div>
 
             {/* Column 2: Our Services */}
@@ -136,18 +107,39 @@ export const Footer = ({ data }: { data?: FooterData }) => {
               </ul>
             </div>
 
-            {/* Column 4: Frequent Questions */}
+            {/* Column 4: Contact Us */}
             <div className="pl-0 lg:pl-8">
-              <h3 className="text-[22px] font-serif text-white mb-4">Frequent Questions</h3>
+              <h3 className="text-[22px] font-serif text-white mb-4">Contact Us</h3>
               <div className="w-8 h-[2px] bg-[#c49250] mb-8"></div>
-              <ul className="flex flex-col gap-5">
-                {(data.faqLinks || []).map((link) => (
-                  <li key={link.id}>
-                    <Link href={link.url} className="text-gray-200 text-[15px] hover:text-[#c49250] transition-colors flex items-center gap-4">
-                      <FaChevronRight className="text-[#c49250] text-[12px]" /> {link.label}
-                    </Link>
-                  </li>
-                ))}
+              <ul className="flex flex-col gap-6">
+                <li className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-[#4a262a] flex items-center justify-center text-[#c49250] shrink-0 mt-1">
+                    <FaMapMarkerAlt size={16} />
+                  </div>
+                  <div>
+                    <p className="text-gray-200 text-[15px] leading-snug pt-1">
+                      {data.contactInfo.address}
+                    </p>
+                  </div>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="w-10 h-10 rounded-full bg-[#4a262a] flex items-center justify-center text-[#c49250] shrink-0">
+                    <FaEnvelope size={16} />
+                  </div>
+                  <div>
+                    <p className="text-gray-200 text-[15px] pt-1">{data.contactInfo.email}</p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-[#4a262a] flex items-center justify-center text-[#d9a8b1] shrink-0 mt-1">
+                    <FaPhoneAlt size={16} />
+                  </div>
+                  <div>
+                    <p className="text-gray-200 text-[15px] leading-snug pt-1">
+                      {data.contactInfo.phone}<br/>Support: {data.contactInfo.phone}
+                    </p>
+                  </div>
+                </li>
               </ul>
             </div>
             

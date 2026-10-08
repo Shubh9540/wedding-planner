@@ -75,11 +75,17 @@ export const FaqSection = ({ data }: { data?: FaqData }) => {
                       </div>
                     </button>
 
-                    {isOpen && (
-                      <div className="bg-[#f4ebe9] text-gray-600 text-xs md:text-[13px] leading-relaxed p-5 rounded-b-md border-t border-[#8c2a4c]">
-                        {faq.answer}
+                    <div
+                      className={`grid transition-all duration-300 ease-in-out bg-[#f4ebe9] rounded-b-md ${
+                        isOpen ? 'grid-rows-[1fr] opacity-100 border-t border-[#8c2a4c]' : 'grid-rows-[0fr] opacity-0 border-t border-transparent'
+                      }`}
+                    >
+                      <div className="overflow-hidden">
+                        <div className="text-gray-600 text-xs md:text-[13px] leading-relaxed p-5">
+                          {faq.answer}
+                        </div>
                       </div>
-                    )}
+                    </div>
                   </div>
                 );
               })}

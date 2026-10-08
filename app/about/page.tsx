@@ -4,7 +4,7 @@ import rawData from '@/data/templates.json';
 
 import { Header } from '@/components/common/Header';
 import { Breadcrumb } from '@/components/common/Breadcrumb';
-import { AboutUsSection } from '@/components/sections/AboutUsSection';
+import { AboutPageSection } from '@/components/sections/AboutPageSection';
 
 import { WhatWeDoSection } from '@/components/sections/WhatWeDoSection';
 import { CounterSection } from '@/components/sections/CounterSection';
@@ -19,7 +19,7 @@ export default function Page() {
   const sectionData = templateData?.categories?.WedBliss?.sections;
   const commonData = templateData?.common;
 
-  if (!sectionData || !commonData) return <div className="text-black p-10">Loading Data...</div>;
+  if (!sectionData || !commonData) return <div className="text-black p-10">{templateData?.common?.globalUI?.loadingText}</div>;
 
   return (
     <main className="bg-[var(--color-bg-main)] min-h-screen flex flex-col">
@@ -28,7 +28,7 @@ export default function Page() {
       <Breadcrumb data={commonData.aboutBreadcrumb} />
       
       {/* About Us Section */}
-      <AboutUsSection data={sectionData.AboutUs?.variants?.WedBlissAboutUs1} hideButton={true} />
+      <AboutPageSection data={sectionData.AboutUs?.variants?.WedBlissAboutUs1} />
 
       {/* What We Do Section */}
       <WhatWeDoSection data={sectionData.WhatWeDo?.variants?.WedBlissWhatWeDo1} />

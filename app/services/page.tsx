@@ -15,7 +15,7 @@ export default function ServicesPage() {
   const sectionData = templateData?.categories?.WedBliss?.sections;
   const commonData = templateData?.common;
 
-  if (!sectionData || !commonData) return <div className="text-black p-10">Loading Data...</div>;
+  if (!sectionData || !commonData) return <div className="text-black p-10">{templateData?.common?.globalUI?.loadingText}</div>;
 
   return (
     <main className="bg-[var(--color-bg-main)] min-h-screen flex flex-col">

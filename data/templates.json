@@ -1,6 +1,11 @@
 {
   "common": {
+    "globalUI": {
+      "loadingText": "Loading Data...",
+      "notFoundText": "Not Found"
+    },
     "Footer": {
+      "logoImage": "/main logo/logo.webp",
       "logoAlt": "WedBliss Logo",
       "brandTitle": "WedBliss",
       "copyrightText": "Copyright © 2026 WedBliss. All rights reserved. Powered By Lestow",
@@ -292,6 +297,18 @@
               "title2": "WedBliss",
               "description1": "With our passion, knowledge, creative flair and inspiration, we are dedicated in helping you to achieve your dream wedding day or special event within your budget.",
               "description2": "Our wedding planning and event coordination services are designed for every couple, no matter the size of your celebration. From intimate gatherings to grand destination weddings, we create memorable experiences with personalized planning, beautiful décor and seamless execution.",
+              "extraContent": [
+                {
+                  "id": "e1",
+                  "title": "Our Mission",
+                  "description": "To create unforgettable memories through meticulous planning and a personal touch."
+                },
+                {
+                  "id": "e2",
+                  "title": "Our Vision",
+                  "description": "Becoming the world's leading wedding and event planner by offering world-class services."
+                }
+              ],
               "stats": [
                 {
                   "id": "s1",
@@ -2346,14 +2363,17 @@
               "description": "Tell us about your cleaning requirements and we'll provide you with a customized quote. It's quick, easy and completely free.",
               "features": [
                 {
+                  "icon": "FaCogs",
                   "title": "Tailored to Your Needs",
                   "description": "Get a quote based on your specific cleaning requirements."
                 },
                 {
+                  "icon": "FaBolt",
                   "title": "Quick & Easy",
                   "description": "Fill out the form in just a few minutes."
                 },
                 {
+                  "icon": "FaHandshake",
                   "title": "No Obligation",
                   "description": "Receive a personalized quote with no commitment."
                 }

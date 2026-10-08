@@ -39,6 +39,11 @@ export interface AboutUsData {
   title2: string;
   description1: string;
   description2: string;
+  extraContent?: {
+    id: string;
+    title: string;
+    description: string;
+  }[];
   stats: {
     id: string;
     number: string;
@@ -167,6 +172,7 @@ export interface TestimonialsData {
 }
 
 export interface FooterData {
+  logoImage: string;
   logoAlt: string;
   brandTitle: string;
   copyrightText: string;
@@ -267,6 +273,7 @@ export interface EnquiryData {
   title2: string;
   description: string;
   features: {
+    icon?: string;
     title: string;
     description: string;
   }[];
@@ -338,6 +345,10 @@ export interface SponsorsData {
 
 export interface WedBlissTemplateData {
   common: {
+    globalUI?: {
+      loadingText: string;
+      notFoundText: string;
+    };
     aboutBreadcrumb?: any;
     servicesBreadcrumb?: any;
     contactBreadcrumb?: any;
