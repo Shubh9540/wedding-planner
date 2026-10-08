@@ -59,7 +59,7 @@ export interface ServiceItem {
   url: string;
 }
 
-export interface ProcessItem {
+export interface WhatWeDoItem {
   id: string;
   icon: string;
   number?: string;
@@ -68,7 +68,7 @@ export interface ProcessItem {
   url?: string;
 }
 
-export interface ProcessData {
+export interface WhatWeDoData {
   subtitle: string;
   title1: string;
   title2: string;
@@ -76,8 +76,8 @@ export interface ProcessData {
   description?: string;
   image?: string;
   bgImage?: string;
-  features?: ProcessItem[];
-  steps?: ProcessItem[];
+  features?: WhatWeDoItem[];
+  steps?: WhatWeDoItem[];
 }
 
 export interface ServicesData {
@@ -104,21 +104,24 @@ export interface ServiceDetailProcessStep {
 
 export interface ServiceDetailData {
   id: string;
-  subtitle: string;
+  subtitle?: string;
   title1: string;
   title2: string;
   description: string;
   imageMain: string;
+  imageSmall1?: string;
+  imageSmall2?: string;
   features: ServiceDetailFeature[];
-  overviewTitle: string;
-  overviewText: string[];
-  overviewImage: string;
-  processTitle: string;
+  overviewTitle?: string;
+  overviewText?: string[];
+  overviewImage?: string;
+  processTitle?: string;
+  processDescription?: string;
   processSteps: ServiceDetailProcessStep[];
-  faqTitle: string;
-  faqs: { id: string; question: string; answer: string }[];
+  faqTitle?: string;
+  faqs?: { id: string; question: string; answer: string }[];
   sidebar: {
-    quoteForm: {
+    quoteForm?: {
       title: string;
       description: string;
       buttonText: string;
@@ -127,6 +130,21 @@ export interface ServiceDetailData {
     servicesList: {
       title: string;
       services: { id: string; label: string; url: string }[];
+    };
+    contactCard?: {
+      title: string;
+      description: string;
+      phone: string;
+      email: string;
+      address: string;
+      buttonText: string;
+      bgImage: string;
+    };
+    whyChooseUsCard?: {
+      title: string;
+      description: string;
+      buttonText: string;
+      bgImage: string;
     };
   };
 }
@@ -231,8 +249,9 @@ export interface ContactData {
     title: string;
     description: string;
     buttonText: string;
-    servicesList: string[];
+    servicesList?: string[];
   };
+  image?: string;
   mapUrl: string;
   infoBoxes?: {
     icon: string;
@@ -287,6 +306,36 @@ export interface CounterData {
   items: CounterItem[];
 }
 
+export interface ServicesGridItem {
+  id: string;
+  title: string;
+  image: string;
+  icon: string;
+  url: string;
+}
+
+export interface ServicesGridData {
+  subtitle: string;
+  title1: string;
+  title2: string;
+  description: string;
+  services: ServicesGridItem[];
+}
+
+export interface SponsorItem {
+  id: string;
+  image: string;
+  alt: string;
+  url?: string;
+}
+
+export interface SponsorsData {
+  subtitle: string;
+  title1: string;
+  title2: string;
+  sponsors: SponsorItem[];
+}
+
 export interface WedBlissTemplateData {
   common: {
     aboutBreadcrumb?: any;
@@ -305,15 +354,17 @@ export interface WedBlissTemplateData {
         AboutUs?: { variants?: { WedBlissAboutUs1?: AboutUsData } };
         Services?: { variants?: { WedBlissServices1?: ServicesData } };
         ServiceDetail?: { variants?: { [key: string]: ServiceDetailData } };
-        Process?: { variants?: { WedBlissProcess1?: ProcessData } };
-        WhatWeDo?: { variants?: { WedBlissWhatWeDo1?: ProcessData } };
+        
+        WhatWeDo?: { variants?: { WedBlissWhatWeDo1?: WhatWeDoData } };
         Faq?: { variants?: { WedBlissFaq1?: FaqData } };
-        Gallery?: { variants?: { WedBlissGallery1?: GalleryData } };
+        Gallery?: { variants?: { WedBlissGallery1?: GalleryData, WedBlissGalleryGrid1?: GalleryData } };
         Testimonials?: { variants?: { WedBlissTestimonials1?: TestimonialsData } };
-        contact?: { variants?: { WedBlissContact1?: ContactData } };
+        Contact?: { variants?: { WedBlissContact1?: ContactData } };
         enquiry?: { variants?: { WedBlissEnquiry1?: EnquiryData } };
         Counter?: { variants?: { WedBlissCounter1?: CounterData } };
         Team?: { variants?: { WedBlissTeam1?: TeamData } };
+        ServicesGrid?: { variants?: { WedBlissServicesGrid1?: ServicesGridData } };
+        Sponsors?: { variants?: { WedBlissSponsors1?: SponsorsData } };
       };
     };
   };

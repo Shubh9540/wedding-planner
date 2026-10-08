@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProcessData } from '@/types/templates.types';
+import { WhatWeDoData } from '@/types/templates.types';
 import Link from 'next/link';
 import { FaBirthdayCake, FaMapMarkedAlt, FaArrowRight } from 'react-icons/fa';
 
@@ -11,7 +11,7 @@ const renderIcon = (iconName: string) => {
   }
 };
 
-export const WhatWeDoSection = ({ data }: { data?: ProcessData }) => {
+export const WhatWeDoSection = ({ data }: { data?: WhatWeDoData }) => {
   if (!data) return null;
 
   return (

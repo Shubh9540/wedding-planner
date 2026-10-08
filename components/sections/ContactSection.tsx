@@ -1,133 +1,121 @@
 import React from 'react';
 import { ContactData } from '@/types/templates.types';
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaHeadset, FaFileAlt } from 'react-icons/fa';
-
-const renderIcon = (iconName: string, className: string = '') => {
-  switch (iconName) {
-    case 'FaMapMarkerAlt': return <FaMapMarkerAlt className={className} />;
-    case 'FaPhoneAlt': return <FaPhoneAlt className={className} />;
-    case 'FaEnvelope': return <FaEnvelope className={className} />;
-    case 'FaClock': return <FaClock className={className} />;
-    case 'FaHeadset': return <FaHeadset className={className} />;
-    case 'FaFileAlt': return <FaFileAlt className={className} />;
-    default: return null;
-  }
-};
+import { FiPhone, FiMapPin, FiMail } from 'react-icons/fi';
+import { FaUser, FaEnvelope, FaMapMarkerAlt, FaPhoneAlt, FaCommentAlt, FaArrowRight } from 'react-icons/fa';
 
 export const ContactSection = ({ data }: { data?: ContactData }) => {
   if (!data) return null;
 
   return (
-    <section className="w-full py-8 lg:py-12 bg-white relative">
-      <div className="max-w-[1250px] mx-auto px-4 md:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
+    <section className="w-full bg-[#fdfaf6]">
+      <div className="max-w-[1250px] mx-auto px-4 md:px-6 lg:px-8 py-16 lg:py-20">
         
-        {/* Left Column */}
-        <div className="flex flex-col lg:col-span-5">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-[#3f1956] text-white px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider mb-6 w-max">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#c099d8]"></span>
+        {/* Header */}
+        <div className="text-center mb-12">
+          <div className="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-[#e04562] mb-3">
             {data.subtitle}
           </div>
-
-          {/* Title */}
-          <h2 className="text-4xl md:text-5xl lg:text-[54px] font-extrabold text-[#051024] leading-[1.1] mb-6">
-            {data.title1} <span className="text-[#3f1956]">{data.title2}</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#3f292b] mb-4 font-serif">
+            {data.title1} <span className="text-[#e04562] font-normal">{data.title2}</span>
           </h2>
-
-          <p className="text-gray-600 text-sm md:text-base mb-10 leading-relaxed max-w-lg">
+          <p className="text-gray-500 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
             {data.description}
           </p>
+        </div>
 
-          {/* Form */}
-          <div className="bg-[#fdfbfe] rounded-2xl p-6 md:p-8 border border-[#e8dff0]">
-            <h3 className="text-2xl font-bold text-[#051024] mb-8">{data.form?.title || 'Send Us a Message'}</h3>
+        {/* Info Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          {/* Phone */}
+          <div className="bg-[#f8f1f3] rounded-md p-6 flex items-center gap-4">
+            <div className="w-12 h-12 rounded-full bg-[#c75e72] flex items-center justify-center text-white text-xl shrink-0">
+              <FiPhone />
+            </div>
+            <div>
+              <h4 className="font-bold text-[#3f292b] text-sm mb-1">{data.contactInfo.phoneTitle}</h4>
+              <p className="text-xs text-gray-500 leading-relaxed whitespace-pre-line">{data.contactInfo.phone}</p>
+            </div>
+          </div>
+          {/* Address */}
+          <div className="bg-[#f8f1f3] rounded-md p-6 flex items-center gap-4">
+            <div className="w-12 h-12 rounded-full bg-[#c75e72] flex items-center justify-center text-white text-xl shrink-0">
+              <FiMapPin />
+            </div>
+            <div>
+              <h4 className="font-bold text-[#3f292b] text-sm mb-1">{data.contactInfo.addressTitle}</h4>
+              <p className="text-xs text-gray-500 leading-relaxed whitespace-pre-line">{data.contactInfo.address}</p>
+            </div>
+          </div>
+          {/* Email */}
+          <div className="bg-[#f8f1f3] rounded-md p-6 flex items-center gap-4">
+            <div className="w-12 h-12 rounded-full bg-[#c75e72] flex items-center justify-center text-white text-xl shrink-0">
+              <FiMail />
+            </div>
+            <div>
+              <h4 className="font-bold text-[#3f292b] text-sm mb-1">{data.contactInfo.emailTitle}</h4>
+              <p className="text-xs text-gray-500 leading-relaxed whitespace-pre-line">{data.contactInfo.email}</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Form Container */}
+        <div className="bg-white rounded-md border border-[#eee8e3] overflow-hidden flex flex-col lg:flex-row shadow-sm">
+          {/* Left Image */}
+          <div className="w-full lg:w-[45%]">
+            <img src={data.image || '/banner/ban1.jpg'} alt="Contact" className="w-full h-full object-cover min-h-[300px]" />
+          </div>
+          
+          {/* Right Form */}
+          <div className="w-full lg:w-[55%] p-8 lg:p-12">
+            <h3 className="text-3xl md:text-4xl font-serif font-bold text-[#3f292b] mb-3">
+              {data.form?.title.split(' ').slice(0, 2).join(' ')} <span className="text-[#e04562] font-normal">{data.form?.title.split(' ').slice(2).join(' ')}</span>
+            </h3>
+            <p className="text-sm text-gray-500 mb-8 leading-relaxed">
+              {data.form?.description}
+            </p>
+            
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <input type="text" placeholder="Your Name *" className="w-full px-5 py-3.5 bg-white border border-[#e8dff0] rounded-xl text-gray-700 text-sm focus:outline-none focus:border-[#3f1956] transition-colors" required />
+                <div className="relative">
+                  <FaUser className="absolute left-4 top-[14px] text-gray-400 text-sm" />
+                  <input type="text" placeholder="Your Name*" className="w-full pl-10 pr-4 py-3 bg-white border border-[#eee8e3] rounded text-sm focus:outline-none focus:border-[#e04562] transition-colors" required />
                 </div>
-                <div>
-                  <input type="email" placeholder="Your Email *" className="w-full px-5 py-3.5 bg-white border border-[#e8dff0] rounded-xl text-gray-700 text-sm focus:outline-none focus:border-[#3f1956] transition-colors" required />
+                <div className="relative">
+                  <FaEnvelope className="absolute left-4 top-[14px] text-gray-400 text-sm" />
+                  <input type="email" placeholder="Your Email ID*" className="w-full pl-10 pr-4 py-3 bg-white border border-[#eee8e3] rounded text-sm focus:outline-none focus:border-[#e04562] transition-colors" required />
                 </div>
-                <div>
-                  <input type="tel" placeholder="Phone Number *" className="w-full px-5 py-3.5 bg-white border border-[#e8dff0] rounded-xl text-gray-700 text-sm focus:outline-none focus:border-[#3f1956] transition-colors" required />
+                <div className="relative">
+                  <FaMapMarkerAlt className="absolute left-4 top-[14px] text-gray-400 text-sm" />
+                  <input type="text" placeholder="Event Venue" className="w-full pl-10 pr-4 py-3 bg-white border border-[#eee8e3] rounded text-sm focus:outline-none focus:border-[#e04562] transition-colors" />
                 </div>
-                <div>
-                  <input type="text" placeholder="Subject *" className="w-full px-5 py-3.5 bg-white border border-[#e8dff0] rounded-xl text-gray-700 text-sm focus:outline-none focus:border-[#3f1956] transition-colors" required />
+                <div className="relative">
+                  <FaPhoneAlt className="absolute left-4 top-[14px] text-gray-400 text-sm" />
+                  <input type="tel" placeholder="Your Number*" className="w-full pl-10 pr-4 py-3 bg-white border border-[#eee8e3] rounded text-sm focus:outline-none focus:border-[#e04562] transition-colors" required />
                 </div>
               </div>
-              <div>
-                <textarea placeholder="Your Message *" rows={5} className="w-full px-5 py-3.5 bg-white border border-[#e8dff0] rounded-xl text-gray-700 text-sm focus:outline-none focus:border-[#3f1956] transition-colors resize-none" required></textarea>
+              <div className="relative">
+                <FaCommentAlt className="absolute left-4 top-[14px] text-gray-400 text-sm" />
+                <textarea placeholder="Your Message*" rows={4} className="w-full pl-10 pr-4 py-3 bg-white border border-[#eee8e3] rounded text-sm focus:outline-none focus:border-[#e04562] transition-colors resize-none" required></textarea>
               </div>
-              <button type="submit" className="inline-flex items-center justify-center gap-2 bg-[#3f1956] hover:bg-[#291038] text-white font-bold py-4 px-8 rounded-xl transition-colors text-sm w-full md:w-auto">
-                {data.form?.buttonText || 'Send Message'} <span className="text-lg">→</span>
+              <button type="submit" className="w-full inline-flex items-center justify-center gap-2 bg-[#e04562] hover:bg-[#c23a53] text-white font-bold py-3.5 rounded transition-colors text-sm">
+                {data.form?.buttonText || 'Make A Reservation'} <FaArrowRight className="text-xs" />
               </button>
             </form>
           </div>
         </div>
 
-        {/* Right Column */}
-        <div className="flex flex-col gap-6 lg:col-span-7">
-          {/* Top Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Address */}
-            <div className="bg-[#fdfbfe] rounded-2xl p-6 border border-[#e8dff0] flex flex-col items-center md:items-start text-center md:text-left">
-              <div className="w-16 h-16 rounded-full bg-[#f3ebf8] flex items-center justify-center text-[#3f1956] text-3xl mb-5">
-                <FaMapMarkerAlt />
-              </div>
-              <h4 className="text-[15px] font-bold text-[#051024] mb-2">{data.contactInfo.addressTitle}</h4>
-              <p className="text-xs text-gray-600 leading-relaxed">{data.contactInfo.address}</p>
-            </div>
-            {/* Phone */}
-            <div className="bg-[#fdfbfe] rounded-2xl p-6 border border-[#e8dff0] flex flex-col items-center md:items-start text-center md:text-left">
-              <div className="w-16 h-16 rounded-full bg-[#f3ebf8] flex items-center justify-center text-[#3f1956] text-3xl mb-5">
-                <FaPhoneAlt />
-              </div>
-              <h4 className="text-[15px] font-bold text-[#051024] mb-2">{data.contactInfo.phoneTitle}</h4>
-              <p className="text-xs text-gray-600">{data.contactInfo.phone}</p>
-            </div>
-            {/* Email */}
-            <div className="bg-[#fdfbfe] rounded-2xl p-6 border border-[#e8dff0] flex flex-col items-center md:items-start text-center md:text-left">
-              <div className="w-16 h-16 rounded-full bg-[#f3ebf8] flex items-center justify-center text-[#3f1956] text-3xl mb-5">
-                <FaEnvelope />
-              </div>
-              <h4 className="text-[15px] font-bold text-[#051024] mb-2">{data.contactInfo.emailTitle}</h4>
-              <p className="text-xs text-gray-600">{data.contactInfo.email}</p>
-            </div>
-          </div>
+      </div>
 
-          {/* Map */}
-          <div className="w-full h-[280px] rounded-2xl overflow-hidden border border-[#e8dff0]">
-            <iframe 
-              src={data.mapUrl} 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }} 
-              allowFullScreen={false} 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-
-          {/* Bottom Info Box */}
-          <div className="bg-[#fdfbfe] rounded-2xl p-6 border border-[#e8dff0]">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 divide-y md:divide-y-0 md:divide-x divide-[#e8dff0]">
-              {data.infoBoxes?.map((box, index) => (
-                <div key={index} className={`flex flex-col md:flex-row items-center md:items-start gap-4 ${index !== 0 ? 'pt-6 md:pt-0 md:pl-6' : ''}`}>
-                  <div className="w-14 h-14 shrink-0 rounded-full bg-[#f3ebf8] flex items-center justify-center text-[#3f1956] text-2xl">
-                    {renderIcon(box.icon)}
-                  </div>
-                  <div className="text-center md:text-left">
-                    <h5 className="font-bold text-[#051024] text-xs mb-1">{box.title}</h5>
-                    <p className="text-[11px] text-gray-600">{box.desc1}</p>
-                    <p className="text-[11px] text-gray-600">{box.desc2}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
+      {/* Full Width Map */}
+      <div className="w-full h-[400px] md:h-[500px]">
+        <iframe 
+          src={data.mapUrl} 
+          width="100%" 
+          height="100%" 
+          style={{ border: 0 }} 
+          allowFullScreen={false} 
+          loading="lazy" 
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </section>
   );
