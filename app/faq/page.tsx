@@ -24,7 +24,7 @@ export default function FaqPage() {
         paths: [{ label: 'Home', url: '/' }, { label: 'FAQ' }]
       }} />
       
-      <div className="py-20 bg-[#fdfaf6]">
+      <div className="bg-[#fdfaf6]">
         <FaqSection data={sectionData.Faq?.variants?.WedBlissFaq1} />
       </div>
 

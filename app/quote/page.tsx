@@ -9,7 +9,7 @@ import { Footer } from '@/components/common/Footer';
 
 export const dynamic = 'force-dynamic';
 
-export default function EnquiryPage() {
+export default function QuotePage() {
   const templateData: WedBlissTemplateData = rawData;
   const sectionData = templateData?.categories?.WedBliss?.sections;
   const commonData = templateData?.common;
@@ -20,10 +20,15 @@ export default function EnquiryPage() {
     <main className="bg-white">
 
       <Header data={sectionData.Header?.variants?.WedBlissHeader1} />
-      <Breadcrumb data={commonData.enquiryBreadcrumb} />
+      <Breadcrumb data={{
+        title: 'Get a Quote',
+        paths: [{ label: 'Home', url: '/' }, { label: 'Get a Quote' }]
+      }} />
       
       {/* Enquiry Section */}
-      <EnquirySection data={sectionData.enquiry?.variants?.WedBlissEnquiry1} />
+      <div className="pb-16">
+        <EnquirySection data={sectionData.enquiry?.variants?.WedBlissEnquiry1} />
+      </div>
 
       <Footer data={commonData.Footer} />
     </main>

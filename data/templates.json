@@ -260,7 +260,7 @@
               ],
               "contactButton": {
                 "text": "Get a Quote ->",
-                "url": "/enquiry"
+                "url": "/quote"
               }
             }
           }
@@ -275,7 +275,7 @@
               "image1": "/banner/banner.webp",
               "button1": {
                 "text": "Get a Quote >",
-                "url": "/enquiry"
+                "url": "/quote"
               },
               "button2": {
                 "text": "More Gallery >",
@@ -2341,8 +2341,8 @@
           "variants": {
             "WedBlissEnquiry1": {
               "subtitle": "GET A QUOTE",
-              "title1": "Get a Quote for",
-              "title2": "Our Cleaning Services",
+              "title1": "Request A",
+              "title2": "Quote",
               "description": "Tell us about your cleaning requirements and we'll provide you with a customized quote. It's quick, easy and completely free.",
               "features": [
                 {
@@ -2362,7 +2362,7 @@
                 "title1": "Request a",
                 "title2": "Quote",
                 "description": "Fill out the form below and our team will get back to you shortly with a customized quote.",
-                "buttonText": "Submit Request ->",
+                "buttonText": "Get a Quote ->",
                 "servicesList": [
                   "Residential Cleaning",
                   "Commercial Cleaning",
