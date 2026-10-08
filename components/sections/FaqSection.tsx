@@ -10,7 +10,7 @@ export const FaqSection = ({ data }: { data?: FaqData }) => {
   if (!data || !data.faqs) return null;
 
   return (
-    <section className="bg-[#fdfaf6] pt-16 lg:pt-8 pb-4 lg:pb-6 overflow-hidden">
+    <section className="w-full bg-[#fdfaf6] py-20 lg:py-12 overflow-hidden">
       <div className="max-w-[1250px] mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
 

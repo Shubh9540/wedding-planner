@@ -3,7 +3,7 @@ import { WedBlissTemplateData } from '@/types/templates.types';
 import rawData from '@/data/templates.json';
 import { Header } from '@/components/common/Header';
 import { Breadcrumb } from '@/components/common/Breadcrumb';
-import { FaqSection } from '@/components/sections/FaqSection';
+import { FaqPageSection } from '@/components/sections/FaqPageSection';
 import { Footer } from '@/components/common/Footer';
 
 export const dynamic = 'force-dynamic';
@@ -18,14 +18,14 @@ export default function FaqPage() {
   return (
     <main className="bg-white">
       <Header data={sectionData.Header?.variants?.WedBlissHeader1} />
-      
+
       <Breadcrumb data={{
         title: 'FAQ',
         paths: [{ label: 'Home', url: '/' }, { label: 'FAQ' }]
       }} />
-      
+
       <div className="bg-[#fdfaf6]">
-        <FaqSection data={sectionData.Faq?.variants?.WedBlissFaq1} />
+        <FaqPageSection data={sectionData.Faq?.variants?.WedBlissFaq1} />
       </div>
 
       <Footer data={commonData.Footer} />

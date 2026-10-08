@@ -35,7 +35,7 @@ export const TestimonialSection = ({ data }: { data?: TestimonialsData }) => {
     : data.testimonials;
 
   return (
-    <section className="bg-[#fcfaf9] pt-4 lg:pt-6 pb-16 lg:pb-24 relative overflow-hidden">
+    <section className="bg-[#fcfaf9] pt-4 lg:pt-6 pb-16 lg:pb-12 relative overflow-hidden">
       <div className="max-w-[1250px] mx-auto px-4 md:px-12 lg:px-16 relative">
 
         {/* Header */}
